@@ -1,0 +1,129 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css");
+
+section {
+    position: relative;
+
+    .gradient {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgb(93, 62, 188);
+        background: linear-gradient(90deg, rgba(93, 62, 188, 1) 0%, rgba(93, 62, 188, 0) 100%);
+        z-index: 99;
+        opacity: 1;
+        width: 100%;
+        height: 100%;
+    }
+
+
+
+    .slider {
+        figure {
+            img {
+                width: 100%;
+                height: 500px;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .content {
+        display: flex;
+        justify-content: space-between;
+
+        .hero-logo {
+            position: absolute;
+            z-index: 100;
+            top: 19%;
+            left: 8%;
+
+            img {
+                width: 180px;
+                height: 180px;
+            }
+
+            h1 {
+                // padding: 5px 10px;
+                font-size: 36px;
+                color: #fff;
+                margin-top: 30px;
+            }
+        }
+
+        .sign-in {
+            background-color: #fafafa;
+            padding: 24px;
+            width: 400px;
+            height: 200px;
+            position: absolute;
+            z-index: 150;
+            top: 29%;
+            right: 9%;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #654094;
+            font-weight: 400;
+            font-size: 16px;
+
+            .contact {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 20px;
+                width: 100%;
+                height: 60px;
+
+
+                .flags {
+                    width: 109px;
+                    height: 56px;
+
+                    button {
+                        width: 100%;
+                        height: 56px;
+                    }
+                }
+
+                input {
+                    position: relative;
+                    width: 229px;
+                    height: 52px;
+                    border: 1px solid rgb(173, 172, 172);
+                    padding: 10px 14px 0;
+                    color: gray;
+
+                    &:hover {
+                        border: 1px solid #654094;
+                    }
+                }
+
+                .placeholder {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+
+
+            }
+
+            .phone {
+                width: 100%;
+                background-color: #ffd300;
+                color: #5d3ebc;
+                height: 48px;
+                padding: 14px 16px;
+                margin-top: 10px;
+                border-radius: 8px;
+                font-size: 14px;
+
+                &:hover {
+                    background-color: #5d3ebc;
+                    color: #ffd300;
+                }
+            }
+        }
+    }
+}
