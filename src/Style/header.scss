@@ -3,6 +3,9 @@
     background-color: #4c3398;
     min-width: 1480.8px;
     padding: 0 40px;
+    position: fixed;
+    top: 0px;
+    z-index: 9999;
 
     .nav {
         padding: 0 20px;

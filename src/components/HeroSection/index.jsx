@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
-
 import Slider from "react-slick";
-import "Style/heroSection.scss";
 import ReactFlagsSelect from "react-flags-select";
+import "Style/heroSection.scss";
 
 
 
@@ -21,10 +20,13 @@ const HeroSection = () => {
     const settings = {
         dots: false,
         infinite: true,
-        speed: 500,
         arrows: false,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        autoplay: true,
+        speed: 500,
+        autoplaySpeed: 3000,
+        cssEase: "linear"
     };
     return (
         <section>
