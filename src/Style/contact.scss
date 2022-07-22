@@ -1,0 +1,38 @@
+.contact-getir {
+    width: 1232px;
+    height: 312px;
+    margin: 24px 0;
+    background: #5d3ebc;
+    margin: 24px auto;
+    border-radius: 10px;
+    // padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .content {
+        padding: 30px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-left: 20px;
+
+        h2 {
+            width: 185px;
+            color: white;
+            font-size: 26px;
+            // margin-top: 8px;
+        }
+
+        h6 {
+            height: 48px;
+            width: 360px;
+            font-size: 15px;
+            color: white;
+            margin-top: -20px;
+        }
+
+
+    }
+}

@@ -6,20 +6,24 @@
     min-width: 1480px;
     height: 227px;
     margin: 32px 0 0;
+    display: flex;
+    flex-direction: column;
 
-    // margin: auto;
+
     .container {
         width: 1232px;
         margin: auto;
 
-        h6 {
+        .title {
             color: #191919;
             font-size: 14px;
             margin: 0 0 8px;
         }
 
         .slider {
-            figure {
+            picture {
+                padding: 0 8px;
+
                 img {
                     width: 400px;
                     height: 200px;
@@ -29,4 +33,6 @@
             }
         }
     }
+
+
 }

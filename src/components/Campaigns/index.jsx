@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Slider from "react-slick";
 import Banners from "api/banners.json"
 import "Style/campaigns.scss"
+import Title from 'components/ui/Title';
 
 const Campaigns = () => {
 
@@ -25,18 +26,19 @@ const Campaigns = () => {
     }, [])
 
     return (
-        <div className='campaigns'>
+        <main className='campaigns'>
             <div className='container'>
-                <h6>Kampanyalar</h6>
+                <Title className="title" >Kapanyalar</Title>
                 <Slider {...settings} className="slider">
                     {banners && banners.map(banner => (
-                        <figure>
+                        <picture>
                             <img src={banner.image} />
-                        </figure>
+                        </picture>
                     ))}
                 </Slider>
             </div>
-        </div>
+
+        </main>
     )
 }
 
