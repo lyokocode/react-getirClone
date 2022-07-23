@@ -1,18 +1,16 @@
-import HeroSection from "components/HeroSection";
+import Content from "components/Content";
 import Header from "components/Header";
-import Categories from "components/Categories";
-import Campaigns from "components/Campaigns";
-import Contact from "components/Contact";
+import Home from "components/Home"
+import { BrowserRouter as Router, } from "react-router-dom"
 
 function App() {
   return (
-    <section>
-      <Header />
-      <HeroSection />
-      <Categories />
-      <Campaigns />
-      <Contact />
-    </section>
+    <Router>
+      <div>
+        <Header />
+      </div>
+      <Content />
+    </Router>
   );
 }
 

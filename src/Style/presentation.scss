@@ -1,0 +1,47 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css");
+
+
+.presentation {
+    min-width: 1480px;
+    height: 374px;
+    padding: 60px 16px 40px;
+
+
+    .container {
+        width: 1232px;
+        margin: auto;
+
+        .slider {
+
+            height: 374px;
+
+            picture {
+                padding: 0 8px;
+                width: 400px;
+                margin: auto;
+
+                img {
+                    text-align: center;
+                    width: 150px;
+                    height: 150px;
+                    object-fit: cover;
+                    margin-left: 60px;
+                }
+
+                p {
+                    margin: auto;
+                    text-align: center;
+                    color: #5d3ebc;
+                    width: 292px;
+                    height: 50px;
+                    font-size: 18px;
+                    margin: 24px 0 0;
+                }
+
+            }
+        }
+    }
+
+
+}

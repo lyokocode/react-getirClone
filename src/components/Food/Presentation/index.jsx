@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import Slider from "react-slick";
-import Banners from "api/banners.json"
-import "Style/campaigns.scss"
-import Title from 'components/ui/Title';
+import presentationData from "api/presentation.json"
+import "Style/presentation.scss"
 
-const Campaigns = () => {
+const Presentation = () => {
 
     const settings = {
         dots: false,
@@ -19,20 +18,20 @@ const Campaigns = () => {
         cssEase: "linear"
     };
 
-    const [banners, setBanners] = useState([])
+    const [promotion, setPromotion] = useState([])
 
     useEffect(() => {
-        setBanners(Banners)
+        setPromotion(presentationData)
     }, [])
 
     return (
-        <main className='campaigns'>
+        <main className='presentation'>
             <div className='container'>
-                <Title className="title" >Kapanyalar</Title>
                 <Slider {...settings} className="slider">
-                    {banners && banners.map(banner => (
-                        <picture>
-                            <img src={banner.image} />
+                    {promotion && promotion.map(product => (
+                        <picture key={product.id}>
+                            <img src={product.image} />
+                            <p>{product.title}</p>
                         </picture>
                     ))}
                 </Slider>
@@ -42,4 +41,4 @@ const Campaigns = () => {
     )
 }
 
-export default Campaigns
+export default Presentation
