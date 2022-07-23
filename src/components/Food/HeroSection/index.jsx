@@ -32,7 +32,7 @@ const HeroSection = () => {
     return (
         <section>
 
-            {/* <Slider {...settings} className="slider">
+            <Slider {...settings} className="slider">
                 <figure>
                     <video playsInline outoplay="true" src='https://getir.com/videos/1-hamburger.mp4' ></video>
                 </figure>
@@ -48,7 +48,7 @@ const HeroSection = () => {
                 <figure>
                     <video playsInline outoplay="true" src='https://getir.com/videos/5-kunefe.mp4' ></video>
                 </figure>
-            </Slider> */}
+            </Slider>
             <div className='content'>
 
 
