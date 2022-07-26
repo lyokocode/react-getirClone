@@ -1,7 +1,8 @@
 .header {
     height: 48px;
     background-color: #4c3398;
-    min-width: 1480.8px;
+    width: 100%;
+    // max-width: 1480.8px;
     padding: 0 40px;
     position: fixed;
     top: 0px;
@@ -9,7 +10,7 @@
 
     .nav {
         padding: 0 20px;
-        margin: 0 85px;
+        margin: 0 50px;
         display: flex;
         align-items: center;
         justify-content: space-between;

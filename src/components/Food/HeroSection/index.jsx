@@ -25,33 +25,30 @@ const HeroSection = () => {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        speed: 1000,
-        autoplaySpeed: 7000,
+        speed: 500,
+        autoplaySpeed: 5000,
         cssEase: "linear"
     };
     return (
         <section>
-
             <Slider {...settings} className="slider">
                 <figure>
-                    <video playsInline outoplay="true" src='https://getir.com/videos/1-hamburger.mp4' ></video>
+                    <video preload="auto" loop autoPlay={true} muted src='videos/1-hamburger.mp4' />
                 </figure>
                 <figure>
-                    <video playsInline outoplay="true" src='https://getir.com/videos/2-doner.mp4' ></video>
+                    <video preload="auto" loop autoPlay={true} muted src='videos/2-doner.mp4' />
                 </figure>
                 <figure>
-                    <video playsInline outoplay="true" src='https://getir.com/videos/3-pide.mp4' ></video>
+                    <video preload="auto" loop autoPlay={true} muted src='videos/3-pide.mp4' />
                 </figure>
                 <figure>
-                    <video playsInline outoplay="true" src='https://getir.com/videos/4-pizza.mp4' ></video>
+                    <video preload="auto" loop autoPlay={true} muted src='videos/4-pizza.mp4' />
                 </figure>
                 <figure>
-                    <video playsInline outoplay="true" src='https://getir.com/videos/5-kunefe.mp4' ></video>
+                    <video preload="auto" loop autoPlay={true} muted src='videos/5-kunefe.mp4' />
                 </figure>
             </Slider>
             <div className='content'>
-
-
                 <div className='location'>
                     <h4>Adresine getiren restoranları gör</h4>
                     <div className='location-input'>
@@ -69,9 +66,7 @@ const HeroSection = () => {
                     </div>
                     <h6>Giriş yap veya kayıt ol</h6>
                     <main className='contact'>
-
                         <div className='flags'>
-
                             <ReactFlagsSelect
                                 countries={Object.keys(phones)}
                                 customLabels={phones}
@@ -84,7 +79,6 @@ const HeroSection = () => {
                     <button className='phone'>Telefon numarası ile devam et</button>
                 </div>
             </div>
-
         </section>
 
     )

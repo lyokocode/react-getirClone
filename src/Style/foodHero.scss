@@ -3,13 +3,18 @@
 
 section {
     position: relative;
-    width: 1480px;
+    max-width: 1480px;
     height: 600px;
 
     .slider {
+        height: 600px;
+
         figure {
+            height: 600px;
+            width: 1480px;
+
             video {
-                width: 100%;
+                width: 1480px;
                 height: 600px;
                 object-fit: cover;
             }

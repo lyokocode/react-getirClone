@@ -3,9 +3,13 @@
 
 section {
     position: relative;
-    min-width: 1480px;
+    width: 1480px;
+    height: 500px;
+
+
 
     .gradient {
+
         position: absolute;
         top: 0;
         left: 0;
@@ -15,15 +19,16 @@ section {
         opacity: 1;
         width: 100%;
         height: 100%;
+
     }
 
-
-
     .slider {
+
         figure {
+
             img {
                 width: 100%;
-                height: 500px;
+                min-height: 500px;
                 object-fit: cover;
             }
         }
@@ -36,8 +41,8 @@ section {
         .hero-logo {
             position: absolute;
             z-index: 100;
-            top: 19%;
-            left: 8%;
+            top: 95px;
+            left: 125px;
 
             img {
                 width: 180px;
@@ -53,21 +58,20 @@ section {
         }
 
         .sign-in {
-            background-color: #fafafa;
-            padding: 24px;
-            width: 400px;
-            height: 200px;
             position: absolute;
-            z-index: 150;
-            top: 29%;
-            right: 9%;
-            border-radius: 10px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            color: #654094;
+            justify-content: center;
+            width: 400px;
+            height: 200px;
+            // padding: 24px;
+            border-radius: 10px;
             font-weight: 400;
             font-size: 16px;
+            background-color: #fafafa;
+            color: #654094;
+            z-index: 150;
 
             .contact {
                 display: flex;
@@ -76,7 +80,6 @@ section {
                 margin-top: 20px;
                 width: 100%;
                 height: 60px;
-
 
                 .flags {
                     width: 109px;
